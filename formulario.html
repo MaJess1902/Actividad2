@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <a href="index.html"> Inicio </a>
+            <a href="video.html"> Video </a>
+            <a href="formulario.html"> Formulario </a>
+            <a href="contacto.html"> Contacto </a>
+        </nav>
+    </header>
+    <h1>Formulario de Registro</h1>
+    <form action="recibir.php" method="get">
+
+        <label>Nombre:
+            <input type="text" name="Nombre" placeholder="Completos" required autofocus>
+        </label>
+        <br><br>
+
+        <label>Apellidos:
+            <input type="text" name="ape" placeholder="Escribe los dos apellidos" size="25" maxlength="15">
+        </label>
+        <br><br>
+
+        <label>Localidad:
+            <input type="text" name="localidad" placeholder="Escribe la Localidad" size="18" minlength="2">
+        </label>
+        <br><br>
+
+        <label>Elegir amigo:
+            <input list="lista">
+        </label>
+        <datalist id="lista">
+            <option value="Juan">
+            <option value="Carlos">
+            <option value="Felipe">
+            <option value="Sebastian">
+        </datalist>
+        <br><br>
+
+        <label>Sexo:</label><br>
+        <label><input type="radio" name="sexo" value="h"> Hombre</label>
+        <label><input type="radio" name="sexo" value="m"> Mujer</label>
+        <br><br>
+
+        <label>Cantidad:
+            <input type="number" name="numero" placeholder="de 10 en 10" step="10">
+        </label>
+        <br><br>
+
+        <label>Edad:
+            <input type="number" name="edad" min="18" max="65" id="idEdad">
+        </label>
+        <br><br>
+
+        <label>Contraseña:
+            <input type="password" name="clave">
+        </label>
+        <br><br>
+
+        <label>Fecha:
+            <input type="date" name="Fecha" value="2020-10-21">
+        </label>
+        <br><br>
+
+        <label>Email:
+            <input type="email" name="correo" multiple>
+        </label>
+        <br><br>
+
+        <label>Hora:
+            <input type="time" name="horaInicio" value="08:10">
+        </label>
+        <br><br>
+
+        <label>Teléfono:
+            <input type="tel" name="Telefono">
+        </label>
+        <br><br>
+
+        <label>Buscar:
+            <input type="search" name="busqueda">
+        </label>
+        <br><br>
+
+        <label>Opinión:
+            <textarea name="area" placeholder="Escribe tu opinión" cols="40" rows="4" minlength="5"
+                maxlength="200"></textarea>
+        </label>
+        <br><br>
+
+        <label>País:
+            <select name="pais">
+                <option value="es">España</option>
+                <option value="mx">México</option>
+                <option value="co" selected>Colombia</option>
+            </select>
+        </label>
+        <br><br>
+
+        <label>
+            <input type="checkbox" name="condiciones" value="acepta" checked> Acepto condiciones
+        </label>
+        <br><br>
+
+        <p><input type="reset" value="Borrar"></p>
+        <p><input type="submit" value="Enviar"></p>
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Videos</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <a href="index.html"> Inicio </a>
+            <a href="video.html"> Video </a>
+            <a href="formulario.html"> Formulario </a>
+            <a href="contacto.html"> Contacto </a>
+        </nav>
+    </header>
+    <form action="procesar.php" method="post">
+        <label>Nombre:
+            <input type="text" name="nombre" placeholder="Escribe tu nombre">
+        </label>
+        <br><br>
+
+        <label>Contacto:
+            <textarea name="consulta" placeholder="Escribe aquí tu consulta" rows="4" cols="30"></textarea>
+        </label>
+        <br><br>
+
+        <label>Sexo:</label>
+        <label><input type="radio" name="sexo" value="hombre"> Hombre</label>
+        <label><input type="radio" name="sexo" value="mujer"> Mujer</label>
+        <br><br>
+
+        <label>
+            <input type="checkbox" name="privacidad" value="aceptado">
+            Acepto las condiciones de privacidad
+        </label>
+        <br><br>
+
+        <input type="reset" value="Borrar">
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>

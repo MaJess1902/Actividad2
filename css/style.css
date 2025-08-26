@@ -1,0 +1,193 @@
+body {
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 40px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 15px;
+    background-color: rgba(255, 255, 255, 0.649);
+    backdrop-filter: blur (10px);
+    margin-bottom: 15px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    margin-right: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: transparent;
+    color: #4a2c72;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.mainContainer {
+    display: grid;
+    justify-content: center;
+}
+
+.lista-box {
+    background: linear-gradient(to bottom right, #f9f7fd, #e0d4f7);
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.lista-box h2 {
+    text-align: center;
+    color: #4a2c72;
+    margin-bottom: 15px;
+}
+
+.listaAnidadaContainer {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.item {
+    font-weight: bold;
+    color: #5e3a8b;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.item::before {
+    content: "🎵";
+    margin-right: 8px;
+}
+
+.item ol {
+    list-style-type: decimal;
+    margin-top: 5px;
+    margin-left: 25px;
+    font-weight: normal;
+    color: #333;
+    font-size: 0.9em;
+}
+
+.item ol li {
+    margin-bottom: 3px;
+}
+
+/* Estilos de la tabla */
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+tr:hover {
+    background: #f1f1f1;
+}
+
+th {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+td {
+    font-size: 14px;
+}
+
+img {
+    width: 60px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/*Estilos del formulario*/
+
+form {
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+p {
+    margin-top: 15px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 48%;
+}
+
+input[type="reset"] {
+    background-color: #f44336;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+input[type="reset"]:hover {
+    background-color: #d32f2f;
+}
